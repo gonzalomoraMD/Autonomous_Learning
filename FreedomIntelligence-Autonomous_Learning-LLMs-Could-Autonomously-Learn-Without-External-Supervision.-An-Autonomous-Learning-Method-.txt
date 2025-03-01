@@ -1,0 +1,109 @@
+>>> ASSISTANT:
+### Key Takeaway
+El repositorio "Autonomous Learning" presenta una metodología para que los Modelos de Lenguaje de Gran Escala (LLMs) aprendan de manera autónoma sin supervisión externa, lo que podría cambiar la forma en que estos modelos se entrenan y mejoran.
+
+### Summary
+- **Objetivo principal**: Proponer un método que permita a los LLMs aprender de manera autónoma sin necesidad de supervisión externa.
+- **Requisitos técnicos**: 
+  - Python 3.10.13
+  - Librerías como torch 2.0.1, transformers 4.35.0, numpy 1.26.3, entre otras.
+  - Requiere el uso de GPUs Tesla A100-80GB para experimentos de alta carga.
+- **Instrucciones de ejecución**:
+  - El proyecto puede ejecutarse con el script `run_AL.sh`.
+- **Reproducibilidad**: Se experimenta en entornos con hardware específico (8 Tesla A100-80GB GPUs).
+- **Contribuciones**: El repositorio es mantenido por Ke Ji y Junying Chen.
+- **Citación**: Se incluye la referencia del artículo que respalda el proyecto: "LLMs Could Autonomously Learn Without External Supervision" de los autores mencionados.
+- **Correo de contacto**: Para dudas técnicas, se puede contactar a Ke Ji (keji@link.cuhk.edu.cn).
+
+**Related queries:**
+
+```markdown
+¿Qué es el "Autonomous Learning" en el contexto de los LLMs?
+```
+
+```markdown
+¿Cuáles son los requisitos para ejecutar el repositorio de Autonomous Learning?
+```
+
+```markdown
+¿Cómo podría cambiar la forma en que los LLMs aprenden sin supervisión externa?
+```
+
+>>> ASSISTANT:
+### Repositorio: **Autonomous Learning (AL) - FreedomIntelligence**
+
+#### ¿Qué es este repositorio?
+Este repositorio presenta un enfoque de **aprendizaje autónomo** (Autonomous Learning, AL) para **modelos de lenguaje grandes (LLMs, por sus siglas en inglés)**. La idea principal es que los modelos de lenguaje pueden **aprender sin necesidad de supervisión externa**. Esto significa que, en lugar de depender de etiquetados manuales o instrucciones humanas explícitas, el modelo puede **autoentrenarse** utilizando solo los datos disponibles, lo que le permite aprender de forma **autónoma**.
+
+Este enfoque es relevante porque en muchos casos no es práctico o económico proporcionar supervisión constante para entrenar modelos, y el modelo autónomo podría mejorar de manera más eficiente con acceso solo a datos y sin intervención humana directa.
+
+### ¿Qué aprenderás al usar este repositorio?
+
+#### 1. **Configuración del entorno**:
+   - Instalación de **dependencias** necesarias: Este repositorio requiere bibliotecas como `torch`, `transformers`, y `numpy` para funcionar correctamente. Tendrás que aprender a configurar un entorno de Python con estas herramientas.
+   
+#### 2. **Ejecución del proceso de Aprendizaje Autónomo**:
+   - Al ejecutar el archivo `run_AL.sh`, el proceso de aprendizaje autónomo comenzará, permitiendo que el modelo de lenguaje aprenda de manera autónoma a partir de los datos sin supervisión externa.
+   - Este repositorio también proporciona ejemplos y scripts para entrenar modelos sin intervención humana.
+
+#### 3. **Manejo de Modelos de Lenguaje Grande**:
+   - Entenderás cómo **configurar y trabajar con modelos de lenguaje grande** (LLMs), cómo se entrenan, cómo optimizar su rendimiento, y cómo permitirles aprender sin etiquetado o supervisión directa.
+   
+#### 4. **Entender el impacto de la autonomía en el entrenamiento**:
+   - Aprenderás la **importancia de la autonomía en el proceso de aprendizaje**, cómo este enfoque puede mejorar el rendimiento de los modelos y cuáles son los beneficios y retos asociados con la falta de supervisión externa.
+   
+#### 5. **Reproducibilidad**:
+   - Este repositorio está diseñado para que puedas **reproducir los resultados** de los experimentos realizados, facilitando su uso en tu propio trabajo o investigaciones.
+
+### Requisitos
+
+Para utilizar este repositorio, es necesario contar con:
+- Python 3.10.13
+- PyTorch 2.0.1
+- Transformadores 4.35.0
+- Otras dependencias como `alignment-handbook`, `vllm`, y `accelerate`.
+
+### ¿Cómo se usa este repositorio?
+
+1. **Instalar las dependencias**: Primero, deberás instalar todas las dependencias mencionadas en el archivo `requirements.txt`.
+   
+2. **Ejecutar el script**: Una vez que tengas todo instalado, puedes ejecutar el script `run_AL.sh`, que pondrá en marcha el proceso de aprendizaje autónomo.
+
+3. **Revisar los resultados**: El repositorio incluye herramientas para revisar el progreso del modelo durante el entrenamiento, los resultados obtenidos, y la mejora del rendimiento del modelo.
+
+4. **Experimentación**: Puedes modificar los parámetros y realizar experimentos adicionales utilizando el código proporcionado para adaptarlo a tus necesidades específicas.
+
+### 10 Usos creativos en MEDICINA
+
+1. **Diagnóstico automático de imágenes médicas**:
+   - Un modelo autónomo podría aprender a **interpretar radiografías, resonancias magnéticas y otros tipos de imágenes médicas** sin la necesidad de etiquetar cada imagen de manera manual, ayudando a los médicos en su diagnóstico.
+
+2. **Predicción de evolución de enfermedades musculoesqueléticas**:
+   - Utilizando datos históricos de pacientes, el modelo podría **predecir la evolución de enfermedades** como la artritis o lesiones en los ligamentos, proporcionando estimaciones para tratamientos y seguimiento.
+
+3. **Generación automática de historias clínicas**:
+   - Un LLM autónomo podría **analizar entrevistas con pacientes** o informes médicos y generar automáticamente un resumen o historia clínica detallada, ahorrando tiempo en la documentación.
+
+4. **Mejora en la personalización de tratamientos**:
+   - Basado en los datos del paciente y sin supervisión humana, el modelo podría **ajustar y personalizar planes de tratamiento**, proponiendo cambios a medida que se reciben más datos del paciente.
+
+5. **Asistente virtual para pacientes**:
+   - Un LLM autónomo podría ser utilizado como un **asistente virtual** para responder a preguntas de los pacientes sobre sus condiciones médicas o tratamientos, brindando información actualizada sin intervención constante de un médico.
+
+6. **Automatización del análisis de resultados de pruebas clínicas**:
+   - Este sistema podría aprender a **analizar los resultados de análisis clínicos** (como análisis de sangre) y generar recomendaciones sobre posibles diagnósticos, lo que agiliza la interpretación de los resultados.
+
+7. **Desarrollo de tratamientos personalizados con células madre**:
+   - En medicina regenerativa, el modelo podría analizar los **historiales médicos** y datos genéticos de los pacientes para sugerir tratamientos **personalizados con células madre** para diferentes tipos de lesiones o enfermedades.
+
+8. **Predicción de complicaciones post-quirúrgicas**:
+   - A partir de los datos de los pacientes y el tipo de cirugía realizada, el modelo podría **predecir posibles complicaciones** postoperatorias, ayudando a los médicos a tomar medidas preventivas.
+
+9. **Automatización de la investigación clínica**:
+   - El LLM podría analizar **grandes cantidades de literatura médica** y proporcionar resúmenes autónomos sobre los últimos avances en tratamientos y tecnologías médicas, acelerando el proceso de investigación.
+
+10. **Mejoramiento de la comunicación entre médicos**:
+    - Un modelo autónomo podría analizar las **comunicaciones entre médicos y personal sanitario**, mejorando la eficiencia de la información compartida y evitando malentendidos en el tratamiento de los pacientes.
+
+### Conclusión
+El repositorio **Autonomous_Learning** ofrece una manera innovadora de entrenar modelos de lenguaje sin supervisión externa, lo que puede ser útil para tareas médicas automatizadas que van desde el diagnóstico hasta la investigación clínica. Su potencial en medicina es amplio, especialmente en áreas donde la eficiencia y la personalización de tratamientos son clave.
